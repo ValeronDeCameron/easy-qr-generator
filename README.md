@@ -5,7 +5,7 @@
 + vanillas js
 + [qr-code-styling](https://www.npmjs.com/package/qr-code-styling)
 
-![App picture](/assets/qr-code picture.png)
+![App picture](/assets/qr-code-picture.png)
 
 # Plan
 
