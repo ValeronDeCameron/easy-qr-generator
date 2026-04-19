@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Gen QR</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+</head>
+<body>
+    <div class="wrap">
+      <div>
+        <div class="inpuDiv">
+          <input class="createQrInput" id="createQrInput" placeholder="Enter the text or link">
+          <button class="clearBtn noDisplay" id="clearBtn" type="button">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24">
+              <path d="M17.854,17.146c.195,.195,.195,.512,0,.707-.098,.098-.226,.146-.354,.146s-.256-.049-.354-.146l-5.146-5.146-5.146,5.146c-.098,.098-.226,.146-.354,.146s-.256-.049-.354-.146c-.195-.195-.195-.512,0-.707l5.146-5.146L6.146,6.854c-.195-.195-.195-.512,0-.707s.512-.195,.707,0l5.146,5.146,5.146-5.146c.195-.195,.512-.195,.707,0s.195,.512,0,.707l-5.146,5.146,5.146,5.146Z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="error noDisplay" id="error">Please enter valid data</div>
+      </div>
+      <button class="createQrButton" id="createQrButton">generate QR</button>
+      <div class="qrcode" id="qrcode"></div>
+      <div class="qrButtons">
+        <div class="qrButtons-rowContainer">
+          <button class="downloadPng" id="downloadPng" disabled>Download PNG</button>
+          <button class="downloadJpg" id="downloadJpg" disabled>Download JPG</button>
+        </div>
+        <button class="downloadSvg" id="downloadSvg" disabled>Download SVG</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

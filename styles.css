@@ -1,0 +1,152 @@
+* {
+  font-family: Inter, Roboto, system-ui, sans-serif;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: fit-content;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 12px;
+}
+
+.inpuDiv {
+  position: relative;
+  display: inline-block;
+}
+
+.createQrInput {
+  width: 140px;
+  height: 2em;
+  padding-left: 8px;
+  padding-right: 36px;
+  padding-block: 4px;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+
+.clearBtn {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.clearBtn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.createQrInput:focus {
+  border-color: cornflowerblue;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(2, 134, 223, 0.3);
+}
+
+button {
+  width: fit-content;
+  padding-inline: 12px;
+  padding-block: 4px;
+  cursor: pointer;
+}
+
+.qrcode {
+  padding: 20px;
+}
+
+.qrButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.qrButtons-rowContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.downloadPng {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: auto;
+}
+
+.downloadPng::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: currentColor;
+  mask: url("./assets/png-file.svg") no-repeat center;
+  mask-size: contain;
+}
+
+.downloadJpg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: auto;
+}
+
+.downloadJpg:disabled {
+  cursor: not-allowed;
+}
+.downloadPng:disabled {
+  cursor: not-allowed;
+}
+.downloadSvg:disabled {
+  cursor: not-allowed;
+}
+
+.downloadJpg::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: currentColor;
+  mask: url("./assets/jpg-file.svg") no-repeat center;
+  mask-size: contain;
+}
+
+.downloadSvg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: auto;
+}
+
+.downloadSvg::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: currentColor;
+  mask: url("./assets/svg-file.svg") no-repeat center;
+  mask-size: contain;
+}
+
+
+
+.error {
+  text-transform: lowercase;
+  font-size: 14px;
+  padding-left: 12px;
+  padding-top: 4px;
+  color: tomato;
+}
+
+.noDisplay {
+  display: none;
+}
