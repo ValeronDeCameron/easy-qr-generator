@@ -1,39 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New Gen QR</title>
-  <link rel="stylesheet" href="styles.css">
-  <script type="text/javascript" src="https://unpkg.com/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Gen QR - Main Page</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
     <div class="wrap">
-      <div>
-        <div class="inpuDiv">
-          <input class="createQrInput" id="createQrInput" placeholder="Enter the text or link">
-          <button class="clearBtn noDisplay" id="clearBtn" type="button">
-            <?xml version="1.0" encoding="UTF-8"?>
-            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24">
-              <path d="M17.854,17.146c.195,.195,.195,.512,0,.707-.098,.098-.226,.146-.354,.146s-.256-.049-.354-.146l-5.146-5.146-5.146,5.146c-.098,.098-.226,.146-.354,.146s-.256-.049-.354-.146c-.195-.195-.195-.512,0-.707l5.146-5.146L6.146,6.854c-.195-.195-.195-.512,0-.707s.512-.195,.707,0l5.146,5.146,5.146-5.146c.195-.195,.512-.195,.707,0s.195,.512,0,.707l-5.146,5.146,5.146,5.146Z"/>
-            </svg>
-          </button>
+      <div class="card">
+        <div class="card-main">
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Layer_1"
+            data-name="Layer 1"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+          >
+            <path
+              d="M24,14v1h-1v-1c0-.55-.45-1-1-1h-3v10h-1V13h-3c-.55,0-1,.45-1,1v1h-1v-1c0-1.1,.9-2,2-2h7c1.1,0,2,.9,2,2ZM16.5,2c.83,0,1.5,.67,1.5,1.5v1.5h1v-1.5c0-1.38-1.12-2.5-2.5-2.5H2.5C1.12,1,0,2.12,0,3.5v1.5H1v-1.5c0-.83,.67-1.5,1.5-1.5h6.5V23h1V2h6.5Z"
+            />
+          </svg>
         </div>
-        <div class="error noDisplay" id="error">Please enter valid data</div>
+        <button class="card-button text">Згенерувати TEXT</button>
       </div>
-      <button class="createQrButton" id="createQrButton">generate QR</button>
-      <div class="qrcode" id="qrcode"></div>
-      <div class="qrButtons">
-        <div class="qrButtons-rowContainer">
-          <button class="downloadPng" id="downloadPng" disabled>Download PNG</button>
-          <button class="downloadJpg" id="downloadJpg" disabled>Download JPG</button>
+      <div class="card">
+        <div class="card-main">
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Layer_1"
+            data-name="Layer 1"
+            viewBox="0 0 24 24"
+            width="512"
+            height="512"
+          >
+            <path
+              d="M7.835,16.17c-.23-.23-.446-.482-.641-.748-.325-.446-.227-1.072,.22-1.397,.446-.325,1.071-.227,1.397,.219,.129,.178,.274,.349,.437,.511,.803,.803,1.87,1.245,3.005,1.245s2.203-.442,3.005-1.245l5.5-5.5c1.657-1.657,1.657-4.354,0-6.011s-4.354-1.657-6.011,0l-1.058,1.058c-.391,.391-1.023,.391-1.414,0s-.391-1.023,0-1.414l1.058-1.058c2.437-2.438,6.402-2.438,8.839,0,2.437,2.437,2.437,6.402,0,8.839l-5.5,5.5c-1.18,1.181-2.75,1.831-4.419,1.831s-3.239-.65-4.418-1.83Zm-1.582,7.83c1.67,0,3.239-.65,4.419-1.831l1.058-1.058c.391-.39,.391-1.023,0-1.414-.39-.391-1.023-.39-1.414,0l-1.059,1.058c-.803,.803-1.87,1.245-3.005,1.245s-2.202-.442-3.005-1.245-1.245-1.87-1.245-3.005,.442-2.203,1.245-3.005l5.5-5.5c.803-.803,1.87-1.245,3.005-1.245s2.203,.442,3.005,1.245c.16,.161,.306,.332,.436,.51,.324,.447,.949,.547,1.397,.221,.447-.325,.546-.95,.221-1.397-.19-.262-.405-.513-.639-.747-1.181-1.182-2.751-1.832-4.42-1.832s-3.239,.65-4.419,1.831L1.834,13.331C.653,14.511,.003,16.081,.003,17.75c0,1.669,.65,3.239,1.831,4.419,1.18,1.181,2.749,1.831,4.419,1.831Z"
+            />
+          </svg>
         </div>
-        <button class="downloadSvg" id="downloadSvg" disabled>Download SVG</button>
+        <button class="card-button text">Згенерувати LINK</button>
+      </div>
+      <div class="card">
+        <div class="card-main">
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Layer_1"
+            data-name="Layer 1"
+            viewBox="0 0 24 24"
+            width="512"
+            height="512"
+          >
+            <path
+              d="M10,19c0-1.1,.9-2,2-2s2,.9,2,2-.9,2-2,2-2-.9-2-2Zm13.68-9.46c.41-.38,.43-1.01,.05-1.41-3.02-3.25-7.3-5.12-11.73-5.12S3.29,4.87,.27,8.12c-.38,.41-.35,1.04,.05,1.41,.4,.38,1.04,.35,1.41-.05,2.64-2.85,6.38-4.48,10.27-4.48s7.62,1.63,10.27,4.48c.2,.21,.46,.32,.73,.32,.24,0,.49-.09,.68-.27Zm-5.01,4.81c.41-.38,.43-1.01,.05-1.41-1.73-1.87-4.18-2.94-6.72-2.94s-4.99,1.07-6.72,2.94c-.38,.4-.35,1.04,.05,1.41,.4,.38,1.04,.35,1.41-.05,1.35-1.46,3.27-2.29,5.26-2.29s3.9,.84,5.26,2.29c.2,.21,.46,.32,.73,.32,.24,0,.49-.09,.68-.27Z"
+            />
+          </svg>
+        </div>
+        <button class="card-button text">Згенерувати WIFI</button>
       </div>
     </div>
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>

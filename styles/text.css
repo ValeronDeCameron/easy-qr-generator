@@ -1,8 +1,22 @@
-* {
-  font-family: Inter, Roboto, system-ui, sans-serif;
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 450px;
+  justify-content: center;
+  align-items: center;
 }
 
-.wrap {
+.header {
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapQr {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -136,8 +150,6 @@ button {
   mask: url("./assets/svg-file.svg") no-repeat center;
   mask-size: contain;
 }
-
-
 
 .error {
   text-transform: lowercase;
